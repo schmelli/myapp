@@ -1,5 +1,9 @@
 import 'package:uuid/uuid.dart';
 
+/// Represents a document in the application.
+/// 
+/// Each document has a unique identifier, title, type, content, and metadata about
+/// its creation and last modification.
 class Document {
   final String uuid;
   final String title;
