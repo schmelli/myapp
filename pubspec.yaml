@@ -1,0 +1,32 @@
+name: myapp
+description: LegalIDE MVP
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  uuid: ^3.0.7
+  provider: ^6.0.5
+  flutter_markdown: ^0.6.17
+  shared_preferences: ^2.2.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  http: ^1.1.0
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/config/

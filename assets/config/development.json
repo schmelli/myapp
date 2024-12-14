@@ -1,0 +1,56 @@
+{
+  "environment": "development",
+  "api": {
+    "baseUrl": "http://localhost:3000",
+    "timeout": 30000
+  },
+  "aws": {
+    "region": "us-west-2",
+    "cognito": {
+      "userPoolId": "dev-user-pool-id",
+      "clientId": "dev-client-id"
+    },
+    "s3": {
+      "bucket": "legal-ide-dev"
+    },
+    "rds": {
+      "endpoint": "dev-rds-endpoint"
+    }
+  },
+  "ui": {
+    "theme": {
+      "primaryColor": "0xFF2196F3",
+      "secondaryColor": "0xFF6C757D",
+      "backgroundColor": "0xFFFFFFFF",
+      "textColor": "0xFF000000"
+    },
+    "layout": {
+      "maxWidth": 1200,
+      "sidebarWidth": 300,
+      "outlineWidth": 250
+    },
+    "editor": {
+      "fontFamily": "Roboto Mono",
+      "fontSize": 14,
+      "lineHeight": 1.5,
+      "tabSize": 2
+    }
+  },
+  "markdown": {
+    "maxHeaderLevel": 6,
+    "validTags": ["employee", "company", "policy", "date"],
+    "validConditions": ["complianceIsRequired", "isEmployee", "hasAccess"]
+  },
+  "features": {
+    "offlineMode": true,
+    "autoSave": true,
+    "syntaxHighlighting": true,
+    "documentHistory": true,
+    "aiSuggestions": false
+  },
+  "logging": {
+    "level": "debug",
+    "includeTimestamp": true,
+    "includeUserId": true
+  }
+}
